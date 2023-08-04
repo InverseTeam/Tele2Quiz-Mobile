@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="30dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="@color/white"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginBottom="21dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/tele_serif_bold"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/text_title_dialog_exit"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonExitDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="21dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/tele_serif_bold"
+                android:padding="15dp"
+                app:strokeColor="@color/color_category"
+                app:strokeWidth="1dp"
+                android:text="Да"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/color_category"
+                android:textSize="16sp"
+                app:cornerRadius="14dp"
+                android:textAllCaps="false"
+                android:stateListAnimator="@null"
+                android:textAppearance="?attr/textAppearanceBody2"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonNoDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="21dp"
+                android:backgroundTint="@color/color_main"
+                android:fontFamily="@font/tele_serif_bold"
+                android:padding="15dp"
+                android:text="Нет"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:cornerRadius="14dp"
+                android:textAllCaps="false"
+                android:stateListAnimator="@null"
+                android:textAppearance="?attr/textAppearanceBody2"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

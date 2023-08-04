@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Tele2Quizz</string>
+    <string name="text_entry_title">Вход</string>
+    <string name="text_dont_have_account">Еще нет аккаунта?</string>
+    <string name="text_forget_password"><u>Забыли пароль?</u></string>
+    <string name="text_have_account"><u>Уже есть аккаунт?</u></string>
+    <string name="text_have_account_registration"><u>Регистрация</u></string>
+    <string name="text_nickname">Никнейм</string>
+    <string name="text_phone_number">Номер</string>
+    <string name="text_password">Пароль</string>
+    <string name="text_error_entry">Неверный никнейм или пароль</string>
+    <string name="text_entry">Войти</string>
+    <string name="text_registration_title">Регистрация</string>
+    <string name="text_error_registration_password">Минимальный размер 8 символов</string>
+    <string name="text_error_registration_radio">Выберите категорию</string>
+    <string name="text_name">Имя</string>
+    <string name="text_surname">Фамилия</string>
+    <string name="text_button_registration">Регистрация</string>
+    <string name="text_error_registration_nickname">Данный никнейм занят</string>
+    <string name="text_error_registration_phone_number">Введите корректный номер</string>
+    <string name="text_menu_test2">Тесты</string>
+    <string name="text_menu_events2">События</string>
+    <string name="text_menu_rooms2">Комнаты</string>
+    <string name="text_menu_profile2">Профиль</string>
+    <string name="text_menu_articles2">Статьи</string>
+    <string name="text_menu_events"><font size="10">События</font></string>
+    <string name="text_menu_test"><font size="10">Тесты</font></string>
+    <string name="text_menu_rooms"><font size="10">Комнаты</font></string>
+    <string name="text_menu_profile"><font size="10">Профиль</font></string>
+    <string name="text_menu_articles"><font size="10">Статьи</font></string>
+    <string name="text_radio_one">Мне от 11 до 13 лет</string>
+    <string name="text_radio_two">Мне от 14 до 16 лет</string>
+    <string name="text_event">Событие</string>
+    <string name="text_start_test">Начать тест</string>
+    <string name="text_points">Баллы</string>
+    <string name="text_information_profile">Личная информация</string>
+    <string name="text_button_convert">Конвертировать</string>
+    <string name="text_button_exit">Выйти</string>
+    <string name="text_category_all">Все</string>
+    <string name="text_category_common">Общие</string>
+    <string name="text_category_math">Математика</string>
+    <string name="text_category_russian">Русский</string>
+    <string name="text_category_english">Английский</string>
+    <string name="text_category_history">История</string>
+    <string name="text_category_sport">Спорт</string>
+    <string name="text_title_dialog_exit">Вы хотите выйти?</string>
+    <string name="text_scan_qr">Считать QR</string>
+    <string name="text_dialog_forget_description">Для смены пароля нужно обратиться в техподдержу официального сайта Tele2</string>
+    <string name="text_dialog_forget_title">Восстановление пароля</string>
+    <string name="text_ok">Хорошо</string>
+    <string name="text_save">Сохранить</string>
+    <string name="text_tarif">Один Гигайбат равен 300 баллам</string>
+</resources>

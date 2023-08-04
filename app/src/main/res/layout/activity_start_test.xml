@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.StartTestActivity"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:elevation="10dp"
+        android:background="@drawable/top_menu_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="27dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/buttonBackSatrtTest"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/icon_arrow_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/tele_serif_bold"
+                android:gravity="center"
+                android:paddingLeft="-24dp"
+                android:text="@string/text_event"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="21dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textTitleStartTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/tele_serif_bold"
+            android:textSize="20sp"
+            android:layout_gravity="left"/>
+
+        <TextView
+            android:id="@+id/testDescriptionStartTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tele_sans_regular"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black_main"
+            android:gravity="left"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/item_layout_count">
+
+                <TextView
+                    android:id="@+id/textPointsStartTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_count"
+                    android:fontFamily="@font/tele_sans_regular"
+                    android:paddingHorizontal="16dp"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingVertical="8dp"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/item_layout_attempt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_attempt"
+                    android:fontFamily="@font/tele_sans_regular"
+                    android:text="1 попытка"
+                    android:paddingHorizontal="16dp"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingVertical="8dp"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonStartTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/color_main"
+            android:fontFamily="@font/tele_serif_bold"
+            android:padding="15dp"
+            android:text="@string/text_start_test"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:cornerRadius="14dp"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:textAppearance="?attr/textAppearanceBody2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tele_sans_regular"
+            android:textSize="12sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color_text_main"
+            android:text="После запуска теста у вас израсходуется 1 попытка"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

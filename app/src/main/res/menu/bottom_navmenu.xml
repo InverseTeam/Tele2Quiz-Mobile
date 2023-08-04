@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_events"
+        android:icon="@drawable/icon_events"
+        android:title="@string/text_menu_events"/>
+    <item
+        android:id="@+id/menu_tests"
+        android:icon="@drawable/icon_tests"
+        android:title="@string/text_menu_test"/>
+    <item
+        android:id="@+id/menu_rooms"
+        android:icon="@drawable/icon_rooms"
+        android:title="@string/text_menu_rooms"/>
+    <item
+        android:id="@+id/menu_articles"
+        android:icon="@drawable/icon_articles"
+        android:title="@string/text_menu_articles"/>
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/icon_profile"
+        android:title="@string/text_menu_profile"/>
+</menu>

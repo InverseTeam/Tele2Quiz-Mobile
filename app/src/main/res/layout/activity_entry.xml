@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EntryActivity"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="31dp"
+            android:layout_marginBottom="21dp"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_main"
+                android:fontFamily="@font/tele_serif_bold"
+                android:textSize="24sp"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:text="@string/text_entry_title" />
+
+            <ImageView
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:adjustViewBounds="true"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_entry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="21dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeWidth="0dp"
+                android:textColorHint="@color/color_text_main"
+                app:boxStrokeWidthFocused="0dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextEntryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="55dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="@string/text_nickname"
+                    android:textColorHint="@color/color_text_main"
+                    android:fontFamily="@font/tele_sans_regular"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                    android:textColor="@color/black_main"
+                    android:maxLength="30"
+                    android:layout_marginBottom="8dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:textColorHint="@color/color_text_main"
+                >
+
+                <EditText
+                    android:id="@+id/editTextEntryPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="55dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="@string/text_password"
+                    android:textColorHint="@color/color_text_main"
+                    android:paddingHorizontal="18dp"
+                    android:textCursorDrawable="@drawable/cursor_style_edit_text"
+                    android:fontFamily="@font/tele_sans_regular"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_main"
+                    android:maxLength="30"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textEntryError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_error_entry"
+                android:textSize="14sp"
+                android:fontFamily="@font/tele_sans_regular"
+                android:textColor="@color/color_error"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonEntry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="21dp"
+                    android:backgroundTint="@color/color_main"
+                    android:fontFamily="@font/tele_serif_bold"
+                    android:padding="15dp"
+                    android:text="@string/text_entry"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:cornerRadius="14dp"
+                    android:textAllCaps="false"
+                    android:stateListAnimator="@null"
+                    android:textAppearance="?attr/textAppearanceBody2"/>
+
+                <ProgressBar
+                    android:id="@+id/progressEntry"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/buttonTextForgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_main"
+                android:fontFamily="@font/tele_sans_regular"
+                android:textSize="16sp"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="center"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/text_forget_password"
+                android:layout_marginHorizontal="31dp"
+                android:layout_marginBottom="24dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tele_sans_regular"
+            android:textSize="16sp"
+            android:textColor="@color/color_text_main"
+            android:text="@string/text_dont_have_account"
+            android:lineSpacingExtra="4dp"/>
+
+        <TextView
+            android:id="@+id/entryTextRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tele_sans_regular"
+            android:textSize="16sp"
+            android:textColor="@color/black_main"
+            android:layout_marginLeft="4dp"
+            android:text="@string/text_have_account_registration"
+            android:lineSpacingExtra="4dp"
+            android:foreground="?attr/selectableItemBackground"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

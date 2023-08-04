@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/progressProfile"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:orientation="vertical">
+    
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+        
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="27dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/tele_serif_bold"
+                        android:text="@string/text_menu_profile2"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+        
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mainLayoutProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="24dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="30dp"
+                            android:fontFamily="@font/tele_serif_bold"
+                            android:text="@string/text_points"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/item_layout_count">
+
+                                <TextView
+                                    android:id="@+id/textPointsProfile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/color_count"
+                                    android:fontFamily="@font/tele_sans_regular"
+                                    android:text="0 баллов"
+                                    android:paddingHorizontal="16dp"
+                                    android:lineSpacingExtra="7dp"
+                                    android:paddingVertical="8dp"
+                                    android:textSize="12sp"/>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="12dp"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/movement_arrows_left_right"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/item_layout_count">
+
+                                <TextView
+                                    android:id="@+id/textGigabyteProfile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/color_count"
+                                    android:fontFamily="@font/tele_sans_regular"
+                                    android:text="5 ГБ"
+                                    android:paddingHorizontal="16dp"
+                                    android:lineSpacingExtra="7dp"
+                                    android:paddingVertical="8dp"
+                                    android:textSize="12sp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/buttonConvert"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="21dp"
+                            android:backgroundTint="@color/color_main"
+                            android:fontFamily="@font/tele_serif_bold"
+                            android:padding="15dp"
+                            android:layout_marginTop="6dp"
+                            android:text="@string/text_button_convert"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            app:cornerRadius="14dp"
+                            android:textAllCaps="false"
+                            android:stateListAnimator="@null"
+                            android:textAppearance="?attr/textAppearanceBody2"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/tele_sans_regular"
+                            android:textSize="12sp"
+                            android:textColor="@color/color_text_main"
+                            android:lineSpacingExtra="3dp"
+                            android:text="@string/text_tarif"
+                            android:gravity="center"
+                            android:layout_marginHorizontal="21dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="24dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="30dp"
+                            android:fontFamily="@font/tele_serif_bold"
+                            android:text="@string/text_information_profile"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginHorizontal="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_background">
+
+                                <TextView
+                                    android:id="@+id/textNicknameProfile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/tele_sans_regular"
+                                    android:textSize="16sp"
+                                    android:layout_marginVertical="17dp"
+                                    android:textColor="@color/black_main"
+                                    android:layout_marginHorizontal="18dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/edit_text_background">
+
+                                <TextView
+                                    android:id="@+id/textPhoneProfile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/tele_sans_regular"
+                                    android:textSize="16sp"
+                                    android:layout_marginVertical="17dp"
+                                    android:textColor="@color/black_main"
+                                    android:layout_marginHorizontal="18dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/edit_text_background">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/tele_sans_regular"
+                                    android:textSize="16sp"
+                                    android:layout_marginVertical="17dp"
+                                    android:text="••••••••••••••••••"
+                                    android:textColor="@color/black_main"
+                                    android:layout_marginHorizontal="18dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/edit_text_background">
+
+                                <TextView
+                                    android:id="@+id/textNameProfile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/tele_sans_regular"
+                                    android:textSize="16sp"
+                                    android:layout_marginVertical="17dp"
+                                    android:textColor="@color/black_main"
+                                    android:layout_marginHorizontal="18dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/edit_text_background">
+
+                                <TextView
+                                    android:id="@+id/textSurnameProfile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/tele_sans_regular"
+                                    android:textSize="16sp"
+                                    android:layout_marginVertical="17dp"
+                                    android:textColor="@color/black_main"
+                                    android:layout_marginHorizontal="18dp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="30dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="16dp">
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/radioProfileOne"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:theme="@style/MyCheckBox"
+                                    android:fontFamily="@font/tele_sans_regular"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black_main"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="@string/text_radio_one"/>
+
+                                <RadioButton
+                                    android:id="@+id/radioProfileTwo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:theme="@style/MyCheckBox"
+                                    android:fontFamily="@font/tele_sans_regular"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black_main"
+                                    android:text="@string/text_radio_two"/>
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/buttonSaveProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="21dp"
+                            android:backgroundTint="@color/color_main"
+                            android:fontFamily="@font/tele_serif_bold"
+                            android:padding="15dp"
+                            android:layout_marginTop="12dp"
+                            android:text="@string/text_save"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            app:cornerRadius="14dp"
+                            android:textAllCaps="false"
+                            android:stateListAnimator="@null"
+                            android:textAppearance="?attr/textAppearanceBody2"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/buttonExit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="21dp"
+                            android:backgroundTint="@color/white"
+                            android:fontFamily="@font/tele_serif_bold"
+                            android:padding="15dp"
+                            app:strokeColor="@color/color_category"
+                            app:strokeWidth="1dp"
+                            android:text="@string/text_button_exit"
+                            android:textColor="@color/color_category"
+                            android:textSize="16sp"
+                            app:cornerRadius="14dp"
+                            android:textAllCaps="false"
+                            android:stateListAnimator="@null"
+                            android:textAppearance="?attr/textAppearanceBody2"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

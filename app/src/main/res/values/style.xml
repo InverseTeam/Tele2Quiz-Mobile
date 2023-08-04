@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationViewTextStyle">
+        <item name="android:fontFamily">@font/tele_sans_bold</item>
+    </style>
+        <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+            <item name="colorControlNormal">@color/color_main</item>
+            <item name="colorControlActivated">@color/color_main</item>
+        </style>
+    <style name="MyCheckBox2" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/color_category</item>
+        <item name="colorControlActivated">@color/color_main</item>
+    </style>
+    <style name="CustomChipChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/backgroung_chip_choice</item>
+        <item name="android:textColor">@color/text_chip_choice</item>
+    </style>
+    <style name="chipText" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/tele_sans_regular</item>
+    </style>
+</resources>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TestActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:elevation="1dp"
+        android:background="@drawable/top_menu_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="27dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/buttonBackTest"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/icon_arrow_left" />
+
+            <TextView
+                android:id="@+id/textTestName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/tele_serif_bold"
+                android:gravity="center"
+                android:paddingLeft="-32dp"
+                android:layout_marginLeft="8dp"
+                android:text="Кто проживает на дне океана?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="21dp"
+                android:layout_marginTop="62dp">
+
+                <TextView
+                    android:id="@+id/textTestDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tele_sans_regular"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black_main"
+                    android:text="«Гу́бка Боб Квадра́тные Штаны́», также известный как «Спанч Боб Сквэр Пэнтс» — американский мультипликационный сериал"
+                    android:gravity="left"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="9dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_time" />
+
+                    <TextView
+                        android:id="@+id/textPlaceCourse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="7dp"
+                        android:fontFamily="@font/tele_serif_bold"
+                        android:gravity="left"
+                        android:lineSpacingExtra="2dp"
+                        android:text="1:25"
+                        android:textColor="@color/color_category"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioGroupRegistration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="33dp">
+
+                    <RadioButton
+                        android:id="@+id/radioTestOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/MyCheckBox"
+                        android:fontFamily="@font/tele_sans_regular"
+                        android:textSize="16sp"
+                        android:textColor="@color/black_main"
+                        android:text="@string/text_radio_one"/>
+
+                    <RadioButton
+                        android:id="@+id/radioTestTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/MyCheckBox"
+                        android:fontFamily="@font/tele_sans_regular"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/black_main"
+                        android:text="@string/text_radio_two"/>
+
+                    <RadioButton
+                        android:id="@+id/radioTestThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/MyCheckBox"
+                        android:fontFamily="@font/tele_sans_regular"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/black_main"
+                        android:text="@string/text_radio_two"/>
+
+                    <RadioButton
+                        android:id="@+id/radioTestFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/MyCheckBox"
+                        android:fontFamily="@font/tele_sans_regular"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/black_main"
+                        android:text="@string/text_radio_two"/>
+
+                </RadioGroup>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonAnswerTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/color_main"
+                    android:fontFamily="@font/tele_serif_bold"
+                    android:padding="15dp"
+                    android:text="Ответить"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:cornerRadius="14dp"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:stateListAnimator="@null"
+                    android:textAppearance="?attr/textAppearanceBody2"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
